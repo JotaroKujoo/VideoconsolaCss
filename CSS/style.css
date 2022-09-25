@@ -2,7 +2,7 @@
 .container{
     height: 100vh;
     width:100vw;
-    background-color: purple;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     width: 60vw;
     height: 45vh;
     display: grid;
-    background-color: purple;
+    background-color: transparent;
     grid-template-columns: 10vw 40vw 10vw;
     grid-template-rows: 17vh 28vh;
 }
@@ -124,7 +124,7 @@
 }
 
 .leftbutbott{
-    width: 2vw;
+    width: 1.5vw;
     height: 3vh;
     background-color: rgb(60,66,68);
     display: flex;
@@ -132,6 +132,10 @@
     justify-content: center;
     border-radius: 3px;
     border-color: transparent;
+}
+
+.leftbutbott:active{
+    background-color: rgb(48, 50, 51);
 }
 
 .leftboticon{
@@ -174,10 +178,21 @@
 }
 
 .screenicon{
-    width: 38vw;
+    width: 37vw;
+    height: 38vh;
+    z-index: 2;
 
 }
+.screeniconcontainer{
+    border: none;
+    width: 37vw;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 
+}
 
 
 
@@ -236,13 +251,17 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(60,66,68);
-    border: 2px solid rgb(93, 101, 103);
-    
-    
+    border: 2px solid rgb(93, 101, 103);    
 }
+
+.homebutton:active{
+    border: 2px solid rgb(33, 34, 34);    
+
+}
+
 .homebuttonicon{
-    width: 2vw;
-    height: 2.5vh;
+    width: 1.25vw;
+    height: 2vh;
     border-radius: 50%;
 
 }
@@ -321,6 +340,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-color: rgb(54, 56, 56);
+    
+    box-shadow: -1px -1px 1px 1px rgb(101, 106, 107) ;
+}
+
+.crucetabutton:active{
+    box-shadow: 1px 1px 1px 1px rgb(101, 106, 107)
 }
 
 .rightjoystickicon{
